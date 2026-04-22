@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Kattefakta</title>
+    <!-- Koble til CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kattefakta 🐱</h1>
+        
+        <p class="fact">{{ fact }}</p>
+        <p class="length">Lengde: {{ length }} tegn</p>
+        
+        <a href="/" class="button">Ny fakta</a>
+    </div>
+</body>
+</html>
